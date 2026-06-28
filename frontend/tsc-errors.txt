@@ -1,0 +1,12 @@
+components/ResponseViewer.tsx(27,9): error TS18048: 'status' is possibly 'undefined'.
+components/ResponseViewer.tsx(27,26): error TS18048: 'status' is possibly 'undefined'.
+components/ResponseViewer.tsx(28,9): error TS18048: 'status' is possibly 'undefined'.
+components/ResponseViewer.tsx(53,47): error TS2322: Type '{} | undefined' is not assignable to type 'ReactNode'.
+  Type '{}' is not assignable to type 'ReactNode'.
+components/ResponseViewer.tsx(58,45): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(o: { [s: string]: string; } | ArrayLike<string>): [string, string][]', gave the following error.
+    Argument of type 'Record<string, string> | undefined' is not assignable to parameter of type '{ [s: string]: string; } | ArrayLike<string>'.
+      Type 'undefined' is not assignable to type '{ [s: string]: string; } | ArrayLike<string>'.
+  Overload 2 of 2, '(o: {}): [string, any][]', gave the following error.
+    Argument of type 'Record<string, string> | undefined' is not assignable to parameter of type '{}'.
+      Type 'undefined' is not assignable to type '{}'.

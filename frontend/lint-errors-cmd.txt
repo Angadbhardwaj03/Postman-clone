@@ -1,0 +1,26 @@
+
+D:\postman-clone\frontend\app\page.tsx
+  8:52  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\postman-clone\frontend\components\KeyValueTable.tsx
+  19:67  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\postman-clone\frontend\components\RequestBuilder.tsx
+   6:97   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   6:149  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  25:49   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\postman-clone\frontend\components\ResponseViewer.tsx
+  5:75  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\postman-clone\frontend\components\Sidebar.tsx
+  6:44  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  7:52  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\postman-clone\frontend\components\Workspace.tsx
+   6:79  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   7:46  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  10:51  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+✖ 11 problems (11 errors, 0 warnings)
+

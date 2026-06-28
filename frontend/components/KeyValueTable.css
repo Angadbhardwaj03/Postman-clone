@@ -1,0 +1,72 @@
+.kv-table-container {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: var(--bg-tertiary);
+}
+
+.kv-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.kv-table th {
+    border-bottom: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    padding: 6px 10px;
+    text-align: left;
+    font-size: 12px;
+    color: var(--text-secondary);
+    font-weight: 600;
+    background-color: var(--bg-secondary);
+}
+
+.kv-table th:last-child {
+    border-right: none;
+}
+
+.kv-table td {
+    border-bottom: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    padding: 0;
+}
+
+.kv-table td:last-child {
+    border-right: none;
+}
+
+.kv-input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    padding: 6px 10px;
+    font-size: 13px;
+    color: var(--text-primary);
+}
+
+.kv-input:focus {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.del-btn {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.del-btn:hover {
+    color: var(--color-delete);
+}
+
+.add-btn {
+    padding: 8px 12px;
+    font-size: 13px;
+    color: var(--accent-color);
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid var(--border-color);
+}
+
+.add-btn:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}

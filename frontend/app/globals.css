@@ -1,0 +1,166 @@
+:root {
+  /* Postman Dark Theme Colors */
+  --bg-primary: #121213;
+  /* Main workspace background */
+  --bg-secondary: #212121;
+  /* Sidebar background, header */
+  --bg-tertiary: #27272A;
+  /* Modals, panels, tabs */
+  --bg-panel: #1A1A1A;
+
+  --text-primary: #ECECEC;
+  --text-secondary: #9B9C9E;
+
+  --border-color: #2D2D2D;
+  --border-active: #E4E5E8;
+
+  /* Methods */
+  --color-get: #0CBB52;
+  --color-post: #FFB400;
+  --color-put: #097BED;
+  --color-patch: #F3CA12;
+  --color-delete: #EB2013;
+  --color-options: #9442b0;
+
+  /* Accents */
+  --accent-color: #E68E36;
+  /* Postman orange */
+  --accent-hover: #D58231;
+  --bg-hover: #29292D;
+
+  /* Layout */
+  --sidebar-width: 260px;
+  --header-height: 48px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+  font-family: inherit;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  color: inherit;
+  outline: none;
+}
+
+/* Layout */
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Header */
+.top-header {
+  height: var(--header-height);
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  justify-content: space-between;
+}
+
+/* Sidebar */
+.sidebar {
+  width: var(--sidebar-width);
+  background-color: var(--bg-secondary);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 10px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+  background-color: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.tab-btn.active {
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.sidebar-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+}
+
+.placeholder {
+  color: var(--text-secondary);
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Workspace (Central Area) */
+.workspace {
+  flex: 1;
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+}
+
+.workspace-header {
+  height: 40px;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.workspace-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
