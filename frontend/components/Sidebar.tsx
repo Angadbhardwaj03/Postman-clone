@@ -7,8 +7,9 @@ export default function Sidebar() {
     const [collections, setCollections] = useState<Array<{ id: string | number; name: string }>>([]);
 
     useEffect(() => {
-        fetch('http://localhost:8000/history').then(r => r.json()).then(setHistory).catch(console.error);
-        fetch('http://localhost:8000/collections').then(r => r.json()).then(setCollections).catch(console.error);
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+        fetch(`${apiUrl}/history`).then(r => r.json()).then(setHistory).catch(console.error);
+        fetch(`${apiUrl}/collections`).then(r => r.json()).then(setCollections).catch(console.error);
     }, [activeTab]);
 
     return (

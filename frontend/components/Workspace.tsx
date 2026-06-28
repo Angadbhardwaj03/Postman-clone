@@ -16,7 +16,8 @@ export default function Workspace({ activeEnvironment }: { activeEnvironment: Wo
         setLoading(true);
         setResponse(null);
         try {
-            const res = await fetch('http://localhost:8000/proxy', {
+            const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+            const res = await fetch(`${apiUrl}/proxy`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(requestData)

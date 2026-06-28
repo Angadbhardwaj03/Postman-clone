@@ -11,7 +11,8 @@ export default function Home() {
   const [selectedEnvId, setSelectedEnvId] = useState<string>('');
 
   useEffect(() => {
-    fetch('http://localhost:8000/environments')
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+    fetch(`${apiUrl}/environments`)
       .then(r => r.json())
       .then(data => {
         setEnvironments(data);
